@@ -1,6 +1,6 @@
 // Write your code here
 // Write your code here
-import {PieChart, Pie, Legend, Cell, ResponsiveContainer} from 'recharts'
+import {PieChart, Pie, Legend, Cell} from 'recharts'
 
 const VaccinationByGender = props => {
   const {vaccinationByGenderData} = props
@@ -9,8 +9,7 @@ const VaccinationByGender = props => {
   return (
     <div>
       <h1>Vaccination by gender</h1>
-      <ResponsiveContainer width={1000} height={300}>
-        <PieChart>
+        <PieChart width={1000} height={300}>
           <Pie
             cx="50%"
             cy="50%"
@@ -32,7 +31,6 @@ const VaccinationByGender = props => {
             align="center"
           />
         </PieChart>
-      </ResponsiveContainer>
     </div>
   )
 }
