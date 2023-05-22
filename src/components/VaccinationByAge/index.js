@@ -1,5 +1,5 @@
 // Write your code here
-import {PieChart, Pie, Legend, Cell, ResponsiveContainer} from 'recharts'
+import {PieChart, Pie, Legend, Cell} from 'recharts'
 
 const VaccinationByAge = props => {
   const {vaccinationByAgeData} = props
@@ -8,9 +8,7 @@ const VaccinationByAge = props => {
   return (
     <div>
       <h1>Vaccination by age</h1>
-      <>
-        <ResponsiveContainer width={1000} height={400}>
-          <PieChart>
+          <PieChart width={1000} height={300}>
             <Pie
               cx="50%"
               cy="50%"
@@ -35,8 +33,6 @@ const VaccinationByAge = props => {
               }}
             />
           </PieChart>
-        </ResponsiveContainer>
-      </>
     </div>
   )
 }
